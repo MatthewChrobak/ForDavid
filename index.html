@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input id="path"></input>
+	<button onclick="navigate()">Go</input>
+	
+	<script>
+    function navigate() {
+        var url = document.getElementById('path').value;
+        url = "com.genetec.platformmobile://" + url;
+		
+		var a = document.createElement('a');
+		a.href = url;
+		a.target = "_blank";
+		
+		a.click();
+    }
+</script>
+  </body>
+</html>
